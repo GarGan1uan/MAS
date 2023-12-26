@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #23222a;
+    font-family: "Open Sans", sans-serif;
+    background-image: url("../../image/alien.jpg");
+    background-size: no-repeat;
+    background-position: left;
+    background-size: cover;      
+    opacity: 0.8;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container_question{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 20;
+    color: white;
+    padding-top: 20px;
+    padding-left: 70px;
+  }
+  
+  .field{
+    max-width: 300px;
+  }
+  
+  .button{
+    max-width: 100px;
+    margin-left: 100px;
+  }
+  
+
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 60px;
+  }
+  
+  .header__logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .header__back {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 2s;
+  }
+  
+  .modal--show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal__card {
+    background-color: #ffffff;
+    max-width: 600px;
+    padding: 16px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #1a191f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal__movie-backdrop {
+    width: 200px;
+    margin: 0 auto
+  }
+  
+  .modal__movie-info {
+    margin-left: 20px;
+  }
+  
+  .modal__button-close {
+    padding: 5px;
+    margin: 10px;
+    align-self: center;
+  }
+  
+  .modal__movie-site {
+    color: #ffd80e
+  }
+  
+  ul li {
+    padding: 5px;
+  }
+  
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  

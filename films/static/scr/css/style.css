@@ -1,0 +1,405 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #23222a;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .filters{
+    max-width: 300px;
+  }
+
+  .container_filters{
+    display: flex;
+    justify-content: center;
+    max-width: 100px;
+    margin: 0 auto;
+    font-size: 20;
+    color: white;
+    padding-top: 20px;
+    padding-left: 70px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgb(189, 189, 189);
+  }
+  
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 60px;
+  }
+  
+  .header__logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .header__Add {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .header__search {
+    padding: 8px;
+    border: 2px solid #1a191f;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .movie {
+    width: 240px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .movie__cover-inner {
+    position: relative;
+    height: 360px;
+  }
+  
+  .movie__cover {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .movie__cover--darkened {
+    background-color: #000000;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .movie__cover--darkened:hover {
+    background-color: grey;
+    cursor: pointer;
+  }
+  
+  .movie__info {
+    padding: 10px 0px;
+  }
+  
+  .movie__title {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .movie__category {
+    font-size: 14px;
+    color: #ffd80e;
+  }
+  
+  .movie__average {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a191f;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .movie__average--green {
+    border: 1px solid green;
+  }
+  
+  .movie__average--orange {
+    border: 1px solid orange;
+  }
+  
+  .movie__average--red {
+    border: 1px solid red;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 2s;
+  }
+  
+  .modal--show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal__card {
+    background-color: #ffffff;
+    max-width: 600px;
+    padding: 16px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #1a191f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal__movie-backdrop {
+    width: 200px;
+    margin: 0 auto
+  }
+  
+  .modal__movie-info {
+    margin-left: 20px;
+  }
+  
+  .modal__button-close {
+    padding: 5px;
+    margin: 10px;
+    align-self: center;
+  }
+  
+  .modal__movie-site {
+    color: #ffd80e
+  }
+  
+  ul li {
+    padding: 5px;
+  }
+  
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+
+
+  #allFilms {
+    order: 2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    appearance: textfield;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+.main {
+    /* border: 4px #033E6B solid; */
+    border-bottom: dashed rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-top: 15px;
+    height: auto;
+    align-items: center;
+    width: auto;
+}
+
+.review {
+    margin: 10px;
+    text-align: center;
+}
+
+.container_for_films {    /*   do not use  ^А^   */
+    margin-top: auto;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 30%;
+    color: #ffffff;
+}
+
+.film {
+    display: flex;
+    height: auto;
+    align-items: center;
+    width: auto;
+}
+
+.text {
+    width: auto;
+    text-align: justify;
+}
+
+img,
+.text {
+    margin: 10px;
+}
+
+img {
+    width: 180px;
+}
+
+.title {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+#filter {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.svg {
+    width: 15px;
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset #genres {
+    display: flex;
+    justify-content: center;
+}
+
+.in_field {
+    border: 2px #033e6a solid;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#filter .field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 4px #033E6B solid;
+}
+
+.review {
+    display: block;
+}
+
+.delete_btn {
+    background-color: rgb(92, 92, 92);
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+
+.info_btn {
+  background-color: rgb(92, 92, 92);
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+input[type=button] {
+    font-size: 15px;
+    background-color: rgb(92, 92, 92);
+    border: none;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: rgb(141, 141, 141);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn_add {
+  background-color: rgb(141, 141, 141);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.rev {
+    border: 1px #141419 solid; 
+    background-color: #34323d;
+
+    border-radius: 0px;
+    margin-top: 15px;
+    width: fit-content;
+    display: inline-block;
+    justify-self: center;
+    padding: 5px;
+}
+
+#rev_text {
+    width: 50%;
+    height: 150px;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    resize: none;
+}
+
+@media screen and (max-width: 390px) {
+    #filter {
+        position: relative;
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #filter {
+        order: 1;
+        width: auto;
+    }
+
+    #allFilms {
+        order: 2;
+    }
+
+    .film {
+        display: block;
+    }
+}

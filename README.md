@@ -1,7 +1,7 @@
 # Михайлова Алёна б2-ИФСТ-32
-Начало сборки:
+* Начало сборки:
 - `bash startFL.sh`
-Запуск compose:
+* Запуск compose:
 - `sudo docker compose up`
-Адрес:
+* Адрес:
 - `localhost:3666`
